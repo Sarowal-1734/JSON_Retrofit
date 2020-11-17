@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    app:cardBackgroundColor="#ab172c41"
+    app:cardElevation="0dp"
+    android:clickable="true"
+    android:layout_margin="3dp"
+    android:foreground="?selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Wed"
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"
+            android:background="#ab172c41"/>
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/tvDate"
+            android:text="Clear Sky"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical" />
+        <TextView
+            android:id="@+id/tvWind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/tvDescription"
+            android:text="Wind"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical" />
+        <TextView
+            android:id="@+id/tvPressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/tvWind"
+            android:text="Pressure"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical" />
+        <TextView
+            android:id="@+id/tvHumidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/tvPressure"
+            android:text="Humidity"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/tvTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvWind"
+            android:layout_marginRight="9dp"
+            android:text="30C"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            />
+        <TextView
+            android:id="@+id/tvMaxTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvTemp"
+            android:layout_marginRight="9dp"
+            android:text="Max: 34C"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/tvMinTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@+id/tvMaxTemp"
+            android:layout_below="@+id/tvTemp"
+            android:layout_marginRight="9dp"
+            android:text="Min: 27C"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
