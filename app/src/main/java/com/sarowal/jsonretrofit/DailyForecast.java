@@ -3,6 +3,8 @@ package com.sarowal.jsonretrofit;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import java.util.List;
+
 public class DailyForecast {
     @SerializedName("city")
     @Expose
@@ -241,7 +243,7 @@ class DayList {
         this.humidity = humidity;
     }
 
-    public java.util.List<Weather> getWeather() {
+    public List<Weather> getWeather() {
         return weather;
     }
 
